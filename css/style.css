@@ -3,7 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
 .navbar {
   max-width: 1500px;
   margin: 0 auto;
@@ -75,3 +80,244 @@ nav {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Responsive NavBar */
+@media screen and (max-width: 999px) {
+  .nav-menu {
+    display: none;
+    background-color: yellowgreen;
+  }
+  .logo {
+    flex-basis: 30%;
+  }
+  .nav-items {
+    flex-basis: 70%;
+  }
+}
+
+/* Collections */
+.collections {
+  margin: 70px 0;
+}
+.collections section {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.collections section h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.collections section p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.collections-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.collections-col-1 {
+  flex-basis: 45%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.collections-col-1 a img {
+  width: 100%;
+}
+
+/* Trending Products */
+.trending-products {
+  margin: 70px 0;
+}
+.trending-products article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.trending-products article h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 20px;
+  /* border-bottom: solid black 1px; */
+}
+/* .trending-products article form {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 30px;
+} */
+.trending-products-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.trending-products-col-1 {
+  flex-basis: 25%;
+  min-width: 250px;
+  margin-bottom: 50px;
+  padding: 10px;
+  transition: transform 0.5;
+}
+
+.trending-products-col-1 p {
+  margin: 5px auto;
+  font-size: 14px;
+}
+.trending-products-col-1 h4 {
+  margin: 8px auto;
+  font-size: 20px;
+}
+.trending-products-col-1 h4 {
+  margin: 8px auto;
+}
+.trending-products-col-1 h4 a {
+  color: #555;
+  font-size: 20px;
+}
+.trending-products-col-1 h4 a:hover {
+  color: red;
+}
+.trending-products-col-1 .rating {
+  margin-bottom: 10px;
+}
+.trending-products-col-1 .rating i {
+  color: gold;
+}
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.price .after-discount {
+  flex-basis: 50%;
+}
+.price .before-discount {
+  text-decoration: line-through;
+}
+/* Hover effect on product */
+.trending-products-col-1:hover {
+  transform: translateY(-5px);
+}
+
+/* Deal of the week */
+.deal-of-the-week {
+  background-color: #f2f2f2;
+}
+.deal-of-the-week section {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* background: radial-gradient(#fff, #ffd6d6); */
+}
+.deal-of-the-week-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.deal-description {
+  flex-basis: 60%;
+}
+.deal-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+.deal-timer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.deal-timer ul {
+  display: flex;
+  list-style: none;
+  padding: 20px;
+}
+.deal-timer ul li {
+  padding: 20px;
+  background-color: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: 50px 20px;
+  font-size: 34px;
+}
+.deal-timer ul li span {
+  color: #ff523b;
+}
+.deal-shop-now-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.deal-shop-now-btn a {
+  text-decoration: none;
+  color: #555;
+  padding: 12px 24px;
+  background-color: #1e1e27;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* Subscribe news offer */
+.subscribe-news-offers {
+  margin: 70px auto;
+}
+
+.subscribe-news-offers article {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #d4f8fd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.news-offer-info {
+  padding: 30px;
+}
+
+.news-offer-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.news-offer-info p {
+  font-size: 20px;
+}
+
+.news-offer-form input[type="email"] {
+  background-color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.news-offer-form button {
+  border: none;
+  border-radius: 20px;
+  background-color: #1e1e27;
+  color: white;
+  font-weight: 500;
+  padding: 12px 24px;
+  transform: translateX(-30px);
+  font-size: 16px;
+}
+
+/* .news-offer-form input[type="email"]:focus {
+  border: #d4f8fd solid 10px;
+  font-size: 60px; 
+}*/
