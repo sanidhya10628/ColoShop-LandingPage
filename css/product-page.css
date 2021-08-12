@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+img {
+  width: 100%;
+}
+
+.product-info {
+  margin: 70px 0;
+}
+
+.product-info section {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: blue; */
+}
+
+.product-desc {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  margin-left: 30px;
+}
+.product-desc h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* Price */
+.price {
+  font-size: 36px;
+  color: #ff4500;
+}
+.discount-precentage {
+  font-size: 22px;
+}
+.before-discount {
+  text-decoration: line-through;
+  color: #555;
+  font-size: 22px;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.rating-stars {
+  margin-right: 10px;
+  color: gold;
+}
+.rating-reviews a {
+  text-decoration: none;
+  color: #555;
+}
+
+/* Status */
+
+.product-status {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-status-btn {
+  padding: 12px 24px;
+  border-radius: 3px;
+  background-color: #ff4500;
+  color: white;
+  cursor: default;
+}
+.status {
+  margin-right: 20px;
+  background-color: rgb(48, 211, 48);
+  color: black;
+}
+
+/* Product About */
+.about-product {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+/* Add to Cart */
+.add-to-cart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.btn-container {
+  margin-right: 10px;
+}
+.quantity {
+  padding: 12px 24px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: default;
+}
+.add-to-cart button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.add-to-cart-btn button {
+  background-color: lightcoral;
+}
+
+/* Product policy */
+.product-policy {
+  margin-top: 15px;
+}
+.product-policy h4 {
+  font-size: 18px;
+  line-height: 2;
+}
+.product-policy ul {
+  margin-left: 10px;
+  list-style: none;
+}
+.product-policy ul li i {
+  color: rgb(14, 240, 14);
+  padding-right: 5px;
+}
+
+/* Responsive product Info */
+@media screen and (max-width: 999px) {
+  .product-info section {
+    flex-direction: column;
+  }
+  .product-desc {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .add-to-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
