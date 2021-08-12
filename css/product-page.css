@@ -187,6 +187,17 @@ img {
   padding: 10px;
   min-width: 250px;
 }
+.reviews-container-col-1 button {
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1e87f0;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .customers-review {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
