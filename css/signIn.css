@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.signin-form {
+  margin: 70px 0;
+}
+.signin-form section {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(1, 1, fr);
+  grid-gap: 20px;
+}
+.signin-form section header {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.signin-container {
+  border: solid black 2px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+.signin-container h3 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: left;
+}
+.signin-container form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  /* border-bottom: #2b1f4d solid 1px; */
+}
+
+label {
+  font-size: 16px;
+}
+
+input[type="email"],
+input[type="password"] {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.input-field button {
+  padding: 12px 24px;
+  background-color: #2b1f4d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+.link-to-signIn-page {
+  margin-top: 10px;
+}
+.link-to-signIn-page a,
+.back-to-store a,
+.forgot-password a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 700;
+}
