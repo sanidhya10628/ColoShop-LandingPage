@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+img {
+  width: 100%;
+}
+
+.path-from-dashboard {
+  margin: 20px 0;
+}
+.path-from-dashboard article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.path-from-dashboard article a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2px;
+}
+.path-from-dashboard article span {
+  color: rgb(233, 159, 21);
+}
+.your-orders {
+  margin: 30px 0;
+}
+.your-orders section {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.your-orders section h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.order-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1r);
+  grid-gap: 50px;
+}
+
+.order-details-row-1 {
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  background-color: white;
+}
+.order-container-1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dee2e2;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #dee2e2;
+}
+.order-container-1 article {
+  padding: 20px;
+}
+
+.order-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.order-container-2-col-1 h5 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.order-summary div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-conatiner {
+  padding: 20px;
+}
+.product-conatiner h5 {
+  font-size: 20px;
+}
+.product-details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.product-details img {
+  width: 300px;
+}
+
+.product-description {
+  font-size: 26px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+.write-a-product-review-btn button {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  background-color: #2b1f4d;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+/* Responsive order list */
+@media screen and (max-width: 700px) {
+  .order-container-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .order-container-2-col-1 {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .product-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+  .product-details img {
+    width: 200px;
+  }
+  .product-description {
+    font-size: 20px;
+  }
+}
