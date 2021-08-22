@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+img {
+  width: 100%;
+}
+
+.path-from-dashboard {
+  margin: 20px 0;
+}
+.path-from-dashboard article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.path-from-dashboard article a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2px;
+}
+.path-from-dashboard article a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+.path-from-dashboard article span {
+  color: rgb(233, 159, 21);
+}
+
+/* Login and security  */
+.login-and-security {
+  margin: 30px;
+}
+.login-and-security section {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.login-and-security section h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.edit-login-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.edit-login-small-container {
+  padding: 20px;
+}
+.edit-login-small-container header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.edit-login-small-container header h4 {
+  font-size: 18px;
+  padding-right: 10px;
+}
+.edit-login-small-container header button {
+  border: none;
+  color: #2874f0;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.input-feild:last-child {
+  padding-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select {
+  cursor: not-allowed;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}

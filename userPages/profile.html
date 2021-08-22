@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/userCss/profile.css">
+
+    <!-- Link Font Awesome -->
+    <script src="https://kit.fontawesome.com/f497ae5ec9.js" crossorigin="anonymous"></script>
+
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Path to the page from dashboard -->
+    <div class="path-from-dashboard">
+        <article>
+            <a href="../dashboard.html">Your Account</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Login and Security</span>
+        </article>
+    </div>
+
+    <div class="login-and-security">
+        <section>
+            <h3>Login and Security</h3>
+            <div class="edit-login-container">
+                <div class="personal-information edit-login-small-container">
+                    <header>
+                        <h4>Personal Information</h4>
+                        <button>Edit</button>
+                    </header>
+                    <form action="">
+                        <div class="input-feild">
+                            <input type="text" name="firstName" id="firstName" placeholder="Sanidhya" disabled required>
+                            <input type="text" name="lastName" id="lastName" placeholder="Mahajan" disabled>
+                        </div>
+                        <div class="input-feild">
+                            <label for="gender">Your Gender</label>
+                            <select name="gender" id="gender" disabled required>
+                                <option value="male" selected>Male</option>
+                                <option value="female">Female</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="email-address edit-login-small-container">
+                    <header>
+                        <h4>Email Address</h4>
+                        <button>Edit</button>
+                    </header>
+
+                    <form action="">
+                        <input type="email" name="email" id="email" placeholder="mahajansanidhya2001@gmail.com" disabled
+                            required>
+                    </form>
+
+                </div>
+
+                <div class="mobile-number edit-login-small-container">
+                    <header>
+                        <h4>Mobile Number</h4>
+                        <button>Edit</button>
+                    </header>
+
+                    <form action="">
+                        <input type="number" name="phone" id="phone" placeholder="9009689359" disabled required>
+
+                    </form>
+                </div>
+
+                <!-- Chnage Password -->
+                <div class="change-password edit-login-small-container">
+                    <header>
+                        <h4>Password</h4>
+                        <button>Change Password</button>
+                    </header>
+
+                    <form action="">
+                        <input type="password" name="oldPassword" id="oldPassword" disabled required
+                            placeholder="Type Current Password">
+                        <input type="password" name="newPassword" id="newPassword" disabled required
+                            placeholder="Type New Password">
+                        <input type="password" name="confirmNewPassword" id="confirmNewPassword" disabled required
+                            placeholder="Retype New Password">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
