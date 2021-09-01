@@ -17,31 +17,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- Link to Glider Js -->
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="./css/glider-css/glide.core.min.css">
+
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="./css/glider-css/glide.theme.min.css">
 </head>
 
 <body>
-    <!-- Top-NavBar -->
-    <!-- <div class="navbar">
-        <div class="nav-1">
-            <div class="nav-1-left-container">
-                <ul>
-                    <li>India</li>
-                    <li>0731-2416368</li>
-                </ul>
-            </div>
-            <div class="nav-1-right-container">
-                <ul>
-                    <li>DAILY</li>
-                </ul>
-            </div>
-        </div>
-    </div> -->
 
     <!-- Nav-Bar -->
     <div class="navbar">
         <nav>
             <div class="logo">
-                <a href=""><img src="./images/logo.png" alt="" width="100px"></a>
+                <a href=""><img src="./images/Logo/logo.png" alt="" width="100px"></a>
             </div>
             <div class="nav-menu">
 
@@ -66,6 +58,41 @@
     </div>
 
 
+    <!-- Glider Js -->
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><img src="./images/slider/slide-1.jpg" alt=""></li>
+                <li class="glide__slide"><img src="./images/slider/slide-2.jpg" alt=""></li>
+                <li class="glide__slide"><img src="./images/slider/slide-3.jpg" alt=""></li>
+            </ul>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript of Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 1,
+            autoplay: 5000,
+            animationDuration: 2000,
+            startAt: 1
+        };
+        new Glide('.glide', config).mount()
+    </script>
 
     <!-- Collections -->
     <div class="collections">
@@ -459,7 +486,7 @@
                     <p><i class="fas fa-home"></i> 12/3 Anoop Nagar Old Palasia, Indore
 
                     </p>
-                    <p><i class="fas fa-phone-alt"></i> +91 9881235478</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 9009689359</p>
                     <p><i class="far fa-envelope"></i>
                         mahajansanidhya2001@gmail.com</p>
                 </div>
@@ -542,7 +569,8 @@
         <article>
             CopyRight <i class="far fa-copyright"></i> 2021 All rights reserved |
             <span id="copyright">
-                Made with <span><i class="fas fa-heart"></i></span> by <a href=""><strong>Sanidhya
+                Made with <span><i class="fas fa-heart"></i></span> by <a
+                    href="https://www.linkedin.com/in/sanidhya-mahajan-00271a193/" target="_blank"><strong>Sanidhya
                         Mahajan</strong></a></span>
         </article>
     </div>
