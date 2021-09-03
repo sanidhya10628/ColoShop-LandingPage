@@ -11,3 +11,133 @@ body {
 img {
   width: 100%;
 }
+
+.cart-container {
+  margin: 70px 0;
+}
+
+.cart-container article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.cart-container article h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.cart-container-row {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 25px;
+}
+.cart-container-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 25px;
+}
+.cart-products-col-1 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+}
+.product-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+}
+.product-info p {
+  padding: 5px 10px;
+  margin-top: 2px;
+  font-size: 18px;
+}
+
+.btn-container {
+  margin-right: 10px;
+}
+.quantity {
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: default;
+}
+.minus,
+.plus {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.product-info p:nth-child(1) {
+  color: #999;
+}
+.product-info p:nth-child(2) a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-info p:last-child button {
+  border: none;
+  padding: 8px 0px;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+}
+.product-info p:last-child button:hover,
+.product-info p:nth-child(2) a:hover {
+  color: #2874f0;
+}
+/* Billing Info CSS */
+aside {
+  background-color: #fff;
+}
+aside h4 {
+  text-align: left;
+  border-bottom: 1px dashed silver;
+  padding: 10px 15px;
+  color: #878787;
+  font-size: 22px;
+}
+aside .price-details {
+  margin-bottom: 20px;
+}
+
+aside .price-details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+aside .price-details div:nth-child(3) {
+  border-bottom: 1px dashed silver;
+}
+aside .price-details div:last-child {
+  border-bottom: 1px dashed silver;
+  padding: 20px 15px;
+}
+
+.amount-saved {
+  padding: 10px 15px;
+  color: green;
+}
+
+/* Responsive  */
+@media screen and (max-width: 850px) {
+  .cart-container-row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart-products-col-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-img {
+    width: 200px;
+    margin-top: 10px;
+  }
+}
