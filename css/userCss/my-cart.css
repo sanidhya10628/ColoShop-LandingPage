@@ -11,9 +11,29 @@ body {
 img {
   width: 100%;
 }
-
+.path-from-dashboard {
+  margin: 20px 0;
+}
+.path-from-dashboard article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.path-from-dashboard article a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2px;
+}
+.path-from-dashboard article a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+.path-from-dashboard article span {
+  color: rgb(233, 159, 21);
+}
 .cart-container {
-  margin: 70px 0;
+  margin: 30px 0;
 }
 
 .cart-container article {

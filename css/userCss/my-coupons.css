@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+img {
+  width: 100%;
+}
+mark {
+  background-color: #00ffee;
+}
+.path-from-dashboard {
+  margin: 20px 0;
+}
+.path-from-dashboard article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.path-from-dashboard article a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2px;
+}
+.path-from-dashboard article a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+.path-from-dashboard article span {
+  color: rgb(233, 159, 21);
+}
+
+/* Coupons CSS*/
+.coupons {
+  margin: 30px 0;
+}
+
+.coupons section {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.coupons section h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.coupons-container {
+  padding-left: 20px;
+  background-color: #fff;
+}
+.coupons-container h5 {
+  font-size: 18px;
+  padding: 15px 0px;
+}
+
+.available-coupons,
+.expired-coupons {
+  padding-left: 20px;
+}
+
+.available-coupons article,
+.expired-coupons article {
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  margin-right: 30px;
+  padding: 10px;
+}
+.available-coupons article p,
+.expired-coupons article p {
+  padding: 5px;
+}
+.available-coupons article p:nth-child(2),
+.expired-coupons article p:nth-child(2) {
+  color: #878787;
+}
+.available-coupons article p:nth-child(1) {
+  color: #26a541;
+}
+.available-coupons article:last-child,
+.expired-coupons article:last-child {
+  border-bottom: 1px solid silver;
+  margin-bottom: 30px;
+}
