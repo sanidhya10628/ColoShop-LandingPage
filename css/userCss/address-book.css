@@ -101,3 +101,51 @@ textarea {
   font-size: 16px;
   color: white;
 }
+
+/* Display Address */
+.display-address {
+  margin: 30px 0;
+}
+.display-address article {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.display-address article h3 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: left;
+}
+
+.display-address-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+.address-card {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 5px;
+  padding: 10px 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.add-address-card {
+  border: 2px dashed lightgray;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  /* padding: 20px; */
+}
+.add-address-card button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  font-size: 26px;
+  color: #565959;
+  padding: 20px;
+}
