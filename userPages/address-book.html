@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Address</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/userCss/address-book.css">
+
+    <!-- Link Font Awesome -->
+    <script src="https://kit.fontawesome.com/f497ae5ec9.js" crossorigin="anonymous"></script>
+
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Path to the page from dashboard -->
+    <div class="path-from-dashboard">
+        <article>
+            <a href="../dashboard.html">Your Account</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Your Orders</span>
+        </article>
+    </div>
+
+    <!-- Add address -->
+    <div class="address">
+        <section>
+            <h3>Add a New Address</h3>
+            <div class="add-address-container">
+                <form action="">
+                    <!-- Full Name -->
+                    <div class="input-field">
+                        <label for="fullName"><b>FULL NAME</b></label>
+                        <br>
+                        <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                        <br>
+                    </div>
+
+                    <!-- Mobile Number -->
+                    <div class="input-field">
+                        <label for="phone"><b>Mobile Number</b></label>
+                        <br>
+                        <input type="text" name="phoneNumber" id="phoneNumber"
+                            placeholder="10 digit Mobile Number without prefixes" required>
+                        <br>
+                    </div>
+
+                    <!-- Pin Code -->
+                    <div class="input-field">
+                        <label for="pinCode"><b>Pin Code</b></label>
+                        <br>
+                        <input type="number" name="pinCode" id="pinCode" placeholder="6-Digit Pin Code" required>
+                        <br>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="input-field">
+                        <label for="address"><b>Address</b></label>
+                        <br>
+                        <textarea name="address" id="address" rows="5" placeholder="Address (Area and Street)"
+                            required></textarea>
+                    </div>
+
+                    <!-- Tow/City -->
+                    <div class="input-field">
+                        <label for="city"><b>City</b></label>
+                        <br>
+                        <input type="text" name="city" id="city" placeholder="City/District/Town" required>
+                        <br>
+                    </div>
+
+                    <!-- State -->
+                    <div class="input-field">
+                        <label for="state"><b>State</b></label>
+                        <br>
+                        <input type="text" name="state" id="state" required>
+                        <br>
+                    </div>
+
+                    <!-- Country -->
+                    <div class="input-field">
+                        <label for="country"><b>Country</b></label>
+                        <br>
+                        <select name="country" id="country" required>
+                            <option value="male" selected>India</option>
+                        </select>
+                        <br>
+                    </div>
+
+                    <div class="input-field">
+                        <button type="submit">Add Address</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

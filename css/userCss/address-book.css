@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+img {
+  width: 100%;
+}
+
+.path-from-dashboard {
+  margin: 20px 0;
+}
+.path-from-dashboard article {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.path-from-dashboard article a {
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2px;
+}
+.path-from-dashboard article a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+.path-from-dashboard article span {
+  color: rgb(233, 159, 21);
+}
+
+.address section {
+  max-width: 800px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(1, 1, fr);
+  grid-gap: 20px;
+}
+.address section h3 {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.add-address-container {
+  border: solid black 2px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+.add-address-container h3 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  text-align: left;
+}
+.signup-container form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  /* border-bottom: #2b1f4d solid 1px; */
+}
+label {
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.input-field button {
+  padding: 12px 24px;
+  background-color: #2b1f4d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
